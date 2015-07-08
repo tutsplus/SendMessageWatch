@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="8121.20" systemVersion="14E46" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.16"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="8066.14"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="SendMessageWatchApp" customModuleProvider="target">
+                    <items>
+                        <label alignment="left" text="Message Label" numberOfLines="4" id="sWf-Th-kDd"/>
+                        <button width="1" alignment="left" title="Send Button" id="1AE-Lz-DNO">
+                            <connections>
+                                <action selector="sendMessage" destination="AgC-eL-Hgc" id="eXZ-LL-DF3"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="messageLabel" destination="sWf-Th-kDd" id="ezO-xr-xiA"/>
+                        <outlet property="sendButton" destination="1AE-Lz-DNO" id="QeD-nJ-7Kb"/>
+                    </connections>
+                </controller>
+            </objects>
+        </scene>
+    </scenes>
+</document>
